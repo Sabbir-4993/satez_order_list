@@ -35,9 +35,11 @@ Route::group(['prefix' => 'admin', 'as'=>'admin.'], function () {
 //    Product List
 //    Route::get('/product', 'Product\ProductController@index')->name('product_list');
     Route::get('/product', 'Product\ProductController@product')->name('product_list');
+    Route::get('/product/test', 'Product\ProductController@product_list')->name('test');
 
 //    Create Order
     Route::get('/order/create', 'Order\OrderController@create_order')->name('order_create');
+    Route::get('/product/search', 'Order\OrderController@autocompleteSearch')->name('autocomplete');
     Route::get('/order/details', 'Order\OrderController@order_details')->name('order_details');
 
 });

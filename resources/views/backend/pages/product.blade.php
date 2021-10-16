@@ -35,7 +35,9 @@
                                     <thead>
                                     <tr class="bg-transparent">
                                         <th>SKU</th>
+                                        <th>Created </th>
                                         <th>Product Name</th>
+                                        <th>Stock</th>
                                         <th>Regular Price</th>
                                         <th>Offer Price</th>
                                         <th style="width: 150px;">Invoice</th>
@@ -46,7 +48,9 @@
                                         @foreach($products as $product )
                                         <tr>
                                             <td>{{$product->id}}</td>
+                                            <td>{{$product->date_created}}</td>
                                             <td>{{$product->name}}</td>
+                                            <td>{{$product->stock_status}}</td>
                                             <td>{{$product->regular_price}}</td>
                                             <td>{{$product->sale_price}}</td>
                                             <td>
