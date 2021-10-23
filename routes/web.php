@@ -34,6 +34,7 @@ Route::group(['prefix' => 'admin', 'as'=>'admin.'], function () {
 
 //    Product List
 //    Route::get('/product', 'Product\ProductController@index')->name('product_list');
+    Route::get('/product-list', 'Product\ProductController@index')->name('product_all');
     Route::get('/product', 'Product\ProductController@product')->name('product_list');
     Route::get('/product/test', 'Product\ProductController@product_list')->name('test');
 

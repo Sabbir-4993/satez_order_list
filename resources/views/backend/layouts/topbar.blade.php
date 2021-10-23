@@ -1,4 +1,3 @@
-<!-- Top Bar Start -->
 <div class="topbar">
     <!-- Navbar -->
     <nav class="navbar-custom">
@@ -125,11 +124,6 @@
                 <button class="nav-link button-menu-mobile">
                     <i data-feather="menu" class="align-self-center topbar-icon"></i>
                 </button>
-            </li>
-            <li class="creat-btn">
-                <div class="nav-link">
-                    <a class=" btn btn-sm btn-soft-primary" href="#" role="button"><i class="fas fa-plus me-2"></i>New Task</a>
-                </div>
             </li>
         </ul>
     </nav>

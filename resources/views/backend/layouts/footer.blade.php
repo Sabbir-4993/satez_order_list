@@ -7,11 +7,11 @@
 <script src="{{asset('assets/js/simplebar.min.js')}}"></script>
 <script src="{{asset('assets/js/moment.js')}}"></script>
 <script src="{{asset('assets/plugins/daterangepicker/daterangepicker.js')}}"></script>
-
 @yield('js')
 
 <!-- App js -->
 <script src="{{asset('assets/js/app.js')}}"></script>
+
 
 </body>
 

@@ -116,37 +116,6 @@ Dashboard
                     </div><!--end col-->
                 </div>
             </div> <!--end card-->
-            <div class="card">
-                <div class="card-header">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h4 class="card-title">Earning Reports</h4>
-                        </div><!--end col-->
-                        <div class="col-auto">
-                            <div class="dropdown">
-                                <a href="#" class="btn btn-sm btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    This Week<i class="las la-angle-down ms-1"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <a class="dropdown-item" href="#">Today</a>
-                                    <a class="dropdown-item" href="#">Last Week</a>
-                                    <a class="dropdown-item" href="#">Last Mont</a>
-                                    <a class="dropdown-item" href="#">This Year</a>
-                                </div>
-                            </div>
-                        </div><!--end col-->
-                    </div>  <!--end row-->
-                </div><!--end card-header-->
-                <div class="card-body">
-                    <div class="text-center">
-                        <div id="ana_device" class="apex-charts"></div>
-                        <h6 class="bg-light-alt py-3 px-2 mb-0">
-                            <i data-feather="calendar" class="align-self-center icon-xs me-1"></i>
-                            01 January 2020 to 31 December 2020
-                        </h6>
-                    </div>
-                </div><!--end card-body-->
-            </div><!--end card-->
         </div><!-- end col-->
     </div><!--end row-->
 @endsection
@@ -157,6 +126,10 @@ Dashboard
 @endsection
 
 @section('js')
+    <script src="{{asset('assets/plugins/apex-charts/apexcharts.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/jvectormap/jquery-jvectormap-us-aea-en.js')}}"></script>
+    <script src="{{asset('assets/pages/jquery.analytics_dashboard.init.js')}}"></script>
     <script src="{{asset('assets/plugins/apex-charts/apexcharts.min.js')}}"></script>
     <script src="{{asset('assets/pages/jquery.sales_dashboard.init.js')}}"></script>
 @endsection

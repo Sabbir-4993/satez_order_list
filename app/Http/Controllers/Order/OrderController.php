@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class OrderController extends Controller
 {
     public function create_order(){
-        return view('backend.pages.order');
+        return view('backend.pages.order.order');
     }
 
     public function autocompleteSearch(Request $request)
@@ -26,6 +26,6 @@ class OrderController extends Controller
     }
 
     public function order_details(){
-        return view('backend.pages.order_details');
+        return view('backend.pages.order.order_details');
     }
 }
