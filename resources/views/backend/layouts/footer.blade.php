@@ -1,12 +1,11 @@
 <!-- jQuery  -->
-<script src="{{asset('assets/js/jquery.min.js')}}"></script>
-<script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('assets/js/metismenu.min.js')}}"></script>
-<script src="{{asset('assets/js/waves.js')}}"></script>
-<script src="{{asset('assets/js/feather.min.js')}}"></script>
-<script src="{{asset('assets/js/simplebar.min.js')}}"></script>
-<script src="{{asset('assets/js/moment.js')}}"></script>
-<script src="{{asset('assets/plugins/daterangepicker/daterangepicker.js')}}"></script>
+<script src="{{asset('assets/libs/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/libs/metismenu/metisMenu.min.js')}}"></script>
+<script src="{{asset('assets/libs/simplebar/simplebar.min.js')}}"></script>
+<script src="{{asset('assets/libs/node-waves/waves.min.js')}}"></script>
+<script src="{{asset('assets/libs/feather-icons/feather.min.js')}}"></script>
+
 @yield('js')
 
 <!-- App js -->

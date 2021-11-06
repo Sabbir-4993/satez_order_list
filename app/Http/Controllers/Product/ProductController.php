@@ -33,7 +33,6 @@ class ProductController extends Controller
     public function product()
     {
 
-
         define('WC_CONSUMER_KEY', 'ck_f5a21d2df6ac35e6fd5f9b16e06dfea1c806a156');
         define('WC_CONSUMER_SECRET', 'cs_77266b286cb902ccd13962b772ed10d57c5ead32');
 

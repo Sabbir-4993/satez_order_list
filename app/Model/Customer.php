@@ -6,6 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
+    //Table
+    protected $table = 'customers';
+
+    //Primary Key
+    public $primaryKey = 'id';
+
+    //Timestamps
+    public $timestamps = 'true';
 
     protected $fillable = [
         'name',
@@ -15,12 +23,11 @@ class Customer extends Model
         'area_id',
     ];
 
-
-
     // Get Area in Customer Field
     public function area()
     {
-        return $this->hasOne(Area::class, 'id', 'area_id');
+        return $this->belongsTo('App\Model\Area', 'area_id');
+//        return $this->hasMany(Area::class, 'id', 'area_id');
     }
 
 //    public function order(){

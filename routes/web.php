@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,24 +14,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('home');
-//});
-
-//Route::get('/', 'Dashboard\IndexController@index');
-
-Route::group(['prefix' => 'admin'], function () {
-    Auth::routes([
-        'register' => false, // Registration Routes...
-        'reset' => false, // Password Reset Routes...
-        'verify' => false, // Email Verification Routes...
-    ]);
+Route::get('/',  function (){
+   return redirect()->route('login');
 });
+
+Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset' => false, // Password Reset Routes...
+    'verify' => false, // Email Verification Routes...
+]);
 
 
 Route::group(['prefix' => 'admin', 'as'=>'admin.'], function () {
     Route::get('/dashboard', 'HomeController@index')->name('home');
 
+    //Customer
+//    Route::resource('/customer',  'Customer\CustomerController');
+    Route::get('/customer', 'Customer\CustomerController@index')->name('customer.index');
+    Route::post('/customer/store', 'Customer\CustomerController@store')->name('customer.store');
+    Route::post('/customer/check', 'Customer\CustomerController@check')->name('customer.check');
 
 //    Product List
 //    Route::get('/product', 'Product\ProductController@index')->name('product_list');
